@@ -1,0 +1,6 @@
+.idea/
+cmake-build-debug/
+lib/mac/libgtest.a
+lib/mac/libgtest_main.a
+lib/win/libgtest.a
+lib/win/libgtest_main.a
