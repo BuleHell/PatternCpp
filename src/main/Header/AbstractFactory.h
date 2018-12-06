@@ -5,7 +5,11 @@
 #ifndef PATTERN_ABSTRACTFACTORY_H
 #define PATTERN_ABSTRACTFACTORY_H
 
-
+/**
+ * 抽象的产品A类型，定义出来，就是要用来实现的
+ *
+ * 虚类，要求覆盖
+ */
 class AbstractProductA
 {
 public:
@@ -15,6 +19,12 @@ protected:
 private:
 };
 
+
+/**
+ * 抽象的产品B类型，定义出来，就是要用来实现的
+ *
+ * 虚类，要求覆盖
+ */
 class AbstractProductB
 {
 public:
@@ -24,6 +34,8 @@ protected:
 private:
 };
 
+
+
 class ProductA1:public AbstractProductA
 {
 public:
@@ -31,6 +43,7 @@ public:
 	~ProductA1();
 protected:
 };
+
 
 class ProductA2:public AbstractProductA
 {
@@ -58,6 +71,12 @@ protected:
 private:
 };
 
+/**
+ * 纯虚函数：
+ * 接口：
+ * 	1.创建产品A
+ * 	2.创建产品B
+ */
 class AbstractFactory
 {
 public:
@@ -69,6 +88,9 @@ protected:
 private:
 };
 
+/*
+ * 具体的实现1
+ */
 class ConcreteFactory1:public AbstractFactory
 {
 public:
@@ -80,6 +102,9 @@ protected:
 private:
 };
 
+/*
+ * 具体的实现2
+ */
 class ConcreteFactory2:public AbstractFactory
 {
 public:
